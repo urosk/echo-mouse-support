@@ -292,36 +292,26 @@ kbd {
 .faq details[open] summary::after { content: "−"; }
 .faq details p { max-width: 810px; padding: 0 40px 23px 0; color: var(--muted); }
 
-.contact {
-  margin-top: 54px;
-  margin-bottom: 88px;
-  padding: clamp(34px, 6vw, 56px);
+.support-line {
+  margin-bottom: 64px;
+  padding: clamp(54px, 8vw, 88px) 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 36px;
-  border-radius: 28px;
-  color: #fffaf2;
-  background:
-    radial-gradient(circle at 90% 0, rgba(255, 188, 69, 0.4), transparent 23rem),
-    linear-gradient(135deg, #aa5b00, #5e3000);
-  box-shadow: 0 24px 70px rgba(122, 67, 0, 0.22);
+  border-top: 1px solid var(--line);
 }
-.contact .eyebrow { color: #ffd793; }
-.contact h2 { margin-bottom: 14px; }
-.contact p { max-width: 600px; margin-bottom: 0; color: rgba(255, 250, 242, 0.76); }
-.button {
+.support-line h2 { margin-bottom: 14px; }
+.support-line p { max-width: 600px; margin-bottom: 0; color: var(--muted); }
+.support-email {
   flex: 0 0 auto;
-  padding: 12px 18px;
-  border-radius: 12px;
-  color: #7a4000;
-  background: white;
-  font-size: 15px;
-  font-weight: 720;
-  text-decoration: none;
-  box-shadow: 0 8px 24px rgba(67, 33, 0, 0.2);
+  color: var(--accent-deep);
+  font-size: 17px;
+  font-weight: 680;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
 }
-.button:hover { color: var(--accent); transform: translateY(-1px); }
+.support-email:hover { color: var(--accent); }
 
 footer {
   min-height: 94px;
@@ -352,8 +342,7 @@ footer span:first-child { margin-right: auto; }
   .playback-card { min-height: 0; }
   .feature-mark { margin-bottom: 34px; }
   .playback-card { flex-direction: column; }
-  .contact { align-items: flex-start; flex-direction: column; }
-  .button { width: 100%; text-align: center; }
+  .support-line { align-items: flex-start; flex-direction: column; }
   footer { flex-wrap: wrap; gap: 10px 20px; }
   footer span:first-child { flex-basis: 100%; }
 }
@@ -391,7 +380,7 @@ footer span:first-child { margin-right: auto; }
 @media print {
   body { background: white; color: black; }
   .site-header nav,
-  .contact,
+  .support-line,
   footer { display: none; }
   .highlights article,
   .steps li,
