@@ -350,7 +350,6 @@ footer span:first-child { margin-right: auto; }
   .site-header { min-height: 76px; }
   .brand img { width: 36px; height: 36px; }
   nav a { padding: 6px 8px; }
-  nav a:first-child { display: none; }
   .hero { padding-top: 66px; }
   .highlights,
   .playback-cards { grid-template-columns: 1fr; }
