@@ -20,6 +20,7 @@ Editing files in this `support-site` folder does not publish them automatically.
 - `privacy.html` — privacy policy
 - `styles.css` — shared responsive styling
 - `app-icon.png` — site icon and header artwork
+- `mac-app-store-badge.svg` — Apple’s Mac App Store badge
 - `.nojekyll` — tells GitHub Pages to serve the files without Jekyll processing
 
 ## Deploying updates
@@ -44,7 +45,7 @@ cd echo-mouse-support
 
 # Copy changed files from this support-site folder into the clone.
 
-git add index.html privacy.html styles.css app-icon.png .nojekyll README.md
+git add index.html privacy.html styles.css app-icon.png mac-app-store-badge.svg .nojekyll README.md
 git commit -m "Update support site"
 git push origin main
 ```
